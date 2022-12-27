@@ -11,6 +11,28 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'randomdog',
+    loadChildren: () => import('./pages/randomdog/randomdog.module').then( m => m.RandomdogPageModule)
+  },
+  {
+    path: 'randomjoke',
+    loadChildren: () => import('./pages/randomjoke/randomjoke.module').then( m => m.RandomjokePageModule)
+  },
+  {
+    path: 'joke',
+    redirectTo: '/randomjoke',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dog',
+    redirectTo: '/randomdog',
+    pathMatch: 'full'
+  },
+  {
+    path: 'randomactivity',
+    loadChildren: () => import('./pages/randomactivity/randomactivity.module').then( m => m.RandomactivityPageModule)
+  },
 ];
 
 @NgModule({

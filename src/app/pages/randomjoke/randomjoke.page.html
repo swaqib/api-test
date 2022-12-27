@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>randomjoke</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-card>
+      <ion-card-title>{{ joke.type | uppercase }}</ion-card-title>
+      <ion-card-subtitle>{{ joke.setup }}</ion-card-subtitle>
+      <ion-card-content>{{ joke.punchline }}</ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-content>

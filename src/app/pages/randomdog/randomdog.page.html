@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>randomdog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-card>
+      <img src="{{dog.message}}" alt="">
+      <ion-card-content><a href="{{ dog.message }}" target="_blank">{{ dog.message }}</a></ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-content>
